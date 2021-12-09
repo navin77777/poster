@@ -137,7 +137,7 @@
                     <span class="badgenen one"> 1 </span>
                     <img
                       class="img-ccard one"
-                      src="./img/pfp1.jpg"
+                      src="./img/1.jpg"
                       width="150"
                       height="150"
                       id="one"
@@ -150,7 +150,7 @@
                     <span class="badgenen"> 2 </span>
                     <img
                       class="img-ccard two"
-                      src="./img/pfp2.jpg"
+                      src="./img/2.jpg"
                       width="150"
                       height="150"
                       id="two"
@@ -165,7 +165,7 @@
                     <span class="badgenen"> 3 </span>
                     <img
                       class="img-ccard three"
-                      src="./img/pfp3.jpg"
+                      src="./img/3.jpg"
                       width="150"
                       height="150"
                       id="three"
@@ -179,7 +179,7 @@
                     <img
                       class="img-ccard four"
                       class="four"
-                      src="./img/pfp4.jpg"
+                      src="./img/4.jpg"
                       width="150"
                       height="150"
                       id="four"
@@ -309,7 +309,7 @@
               ></button>
             </div>
             <div class="modal-body" id="poster_data">
-              <div><img id="img2" src="./img/pfp1.jpg" width="100%" /></div>
+              <div><img id="img2" src="./img/1.jpg" width="100%" /></div>
               <div class="content">
                 <div class="data">
                   <div
@@ -390,15 +390,15 @@
           setTimeout(function () {
             document.querySelector("#one").classList.remove("addOpacity");
           }, 4000);
-          document.getElementById("img2").src = "./img/pfp1.jpg";
+          document.getElementById("img2").src = "./img/1.jpg";
         });
 
         document.querySelector(".two").addEventListener("click", function () {
           document.querySelector(".two").classList.add("addOpacity");
           setTimeout(function () {
             document.querySelector(".two").classList.remove("addOpacity");
-          }, 4000);
-          document.getElementById("img2").src = "./img/pfp2.jpg";
+          }, 5000);
+          document.getElementById("img2").src = "./img/2.jpg";
         });
 
         document.querySelector(".three").addEventListener("click", function () {
@@ -406,7 +406,7 @@
           setTimeout(function () {
             document.querySelector(".three").classList.remove("addOpacity");
           }, 4000);
-          document.getElementById("img2").src = "./img/pfp3 (1).jpg";
+          document.getElementById("img2").src = "./img/3.jpg";
         });
 
         document.querySelector(".four").addEventListener("click", function () {
@@ -414,7 +414,7 @@
           setTimeout(function () {
             document.querySelector(".four").classList.remove("addOpacity");
           }, 4000);
-          document.getElementById("img2").src = "./img/pfp4.jpg";
+          document.getElementById("img2").src = "./img/4.jpg";
         });
         function generate() {
           //debugger;
@@ -435,8 +435,9 @@
 
         function download() {
           var opt = {
+            margin: 0,
             filename: "poster.pdf",
-            image: { type: "jpeg", quality: 1 },
+            image: { type: "jpeg", quality: 2 },
             html2canvas: {
               scale: 4,
               dpi: 192,
